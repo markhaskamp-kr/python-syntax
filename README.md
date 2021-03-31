@@ -1,15 +1,25 @@
-### unit tests to explore python syntax
+## unit tests to explore python syntax
 
-uses *virtualenv*  
-from .../python/syntax directory
+### one time setup
 
+- checkout the repository
+- create virtual environment  *virtualenv*
+    - from project root directory  
+> python3 -m venv env
+
+### daily use
+
+
+
+- activate *python* from virtual environment
+    - from project root directory
 > . env/bin/activate
 
 then
 
 **unittest help**
 
-python -m unittest -h
+> python -m unittest -h
 
 **run all the tests**
 
@@ -29,3 +39,6 @@ or with shortcut shell script
 > . tests test/test\_foo.py -k helloworld -v  
 > . test test/test\_datetime.py -k strptime -v
 
+**deactivate virtual environment**
+
+> deactivate
