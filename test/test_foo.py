@@ -11,3 +11,6 @@ class TestFoo(unittest.TestCase):
     def test_helloworld(self):
         self.assertTrue(True)
 
+    def test_assertNil(self):
+        self.assertIsNone(None)
+
