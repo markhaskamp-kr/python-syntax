@@ -14,3 +14,7 @@ class TestFoo(unittest.TestCase):
     def test_assertNil(self):
         self.assertIsNone(None)
 
+    def test_assertIn(self):
+        myList = [1,2,3]
+        self.assertIn(1, myList)
+
