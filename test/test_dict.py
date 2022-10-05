@@ -16,9 +16,9 @@ class TestDict(unittest.TestCase):
         with self.assertRaises(KeyError):
             self.d['abc']
 
-    def test_given_get__when_key_exists__then_return_value(self):
+    def test_given_dict_get__when_key_exists__then_return_value(self):
         self.assertEqual('one', self.d.get('foo'))
 
-    def test_given_get__when_key_does_not_exist__then_return_None(self):
+    def test_given_dict_get__when_key_does_not_exist__then_return_None(self):
         self.assertEqual(None, self.d.get('abc'))
 
