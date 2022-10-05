@@ -9,10 +9,10 @@ class TestDict(unittest.TestCase):
         self.d = None
 
 
-    def test_fetch_for_key__when_key_exists__then_return_value(self):
+    def test_given_dict_fetch_for_key__when_key_exists__then_return_value(self):
         self.assertEqual('one', self.d['foo'])
 
-    def test_fetch_for_key__when_key_does_not_exist__then_throw_KeyError(self):
+    def test_given_dict_fetch_for_key__when_key_does_not_exist__then_throw_KeyError(self):
         with self.assertRaises(KeyError):
             self.d['abc']
 
